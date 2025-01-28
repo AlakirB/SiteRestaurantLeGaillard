@@ -29,7 +29,7 @@
             }
             .nav-link:hover {
                 color: white;
-                border-bottom: 2px solid white;
+                border-bottom: 0.2rem solid white;
             }
             .logo-img {
                 max-width: 100%;
