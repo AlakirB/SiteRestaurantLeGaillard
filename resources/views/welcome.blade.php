@@ -12,6 +12,7 @@
         <style>
             .nav-1 {
                 background-color: #292929;
+                height: 50px;
             }
             .header-left, .header-right {
                 color: #FFFFFFA8;
@@ -19,6 +20,7 @@
             
             .nav-2 {
                 background-color: #426B56;
+                height: 132px;
             }
             .nav-logo {
                 color: #AF9756;
@@ -34,7 +36,7 @@
             .logo-img {
                 max-width: 100%;
                 height: auto;
-                max-height: 200px; /* Adjust this value as needed */
+                max-height: 120px; /* Adjust this value as needed */
             }
         </style>
     </head>
@@ -57,7 +59,7 @@
             </nav>
 
             <!-- NavBar -->
-            <nav class="nav-2 py-5">
+            <nav class="nav-2 py-0.2">
                 <div class="container d-flex justify-content-between align-items-center">
 
                     <!-- Left side of the nav -->
