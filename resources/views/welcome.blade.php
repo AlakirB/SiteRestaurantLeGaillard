@@ -28,8 +28,8 @@
                 font-size: 1.2rem;
             }
             .nav-link:hover {
-                text-decoration: underline;
                 color: white;
+                border-bottom: 2px solid white;
             }
             .logo-img {
                 max-width: 100%;
@@ -63,7 +63,7 @@
                     <!-- Left side of the nav -->
                     <ul class="nav">
                         <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Le Restaurant</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">La Carte</a></li>
                     </ul>
 
                     <!-- Center -->
@@ -73,6 +73,7 @@
 
                     <!-- Right side of the nav -->
                     <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Le Restaurant</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                     </ul>
 
