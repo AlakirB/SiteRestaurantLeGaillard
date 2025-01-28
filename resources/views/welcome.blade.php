@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
     <head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Restaurant Le Gaillard - Bienvenue</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
+        <link rel="shortcut icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <style>
+            /* Navbars CSS */
             .nav-1 {
                 background-color: #292929;
                 height: 50px;
@@ -29,7 +34,7 @@
                 color: #AF9756;
                 font-size: 1.2rem;
             }
-            .nav-link:hover {
+            .nav-link:hover, #focus-link {
                 color: white;
                 border-bottom: 0.2rem solid white;
             }
@@ -38,6 +43,28 @@
                 height: auto;
                 max-height: 120px; /* Adjust this value as needed */
             }
+
+            .separator {
+                padding: 0 10px; /* Adjust the spacing as needed */
+                color: white; /* Adjust the color as needed */
+                line-height: 2.5; /* Adjust the line-height to match the nav-link */
+            }
+            
+            /* Carousel CSS */
+            .carousel-item {
+                height: 700px;
+            }
+            .carousel-item img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: transform 5s ease;
+            }
+            .carousel-item.active img {
+                transform: scale(1.1);
+            }
+
+            
         </style>
     </head>
     <body>
@@ -64,8 +91,9 @@
 
                     <!-- Left side of the nav -->
                     <ul class="nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">La Carte</a></li>
+                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link" id="focus-link">Accueil</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
+                        <li class="nav-item separator">|</li>
+                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">La Carte</a></li>
                     </ul>
 
                     <!-- Center -->
@@ -75,13 +103,32 @@
 
                     <!-- Right side of the nav -->
                     <ul class="nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Le Restaurant</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Le Restaurant</a></li>
+                        <li class="nav-item separator">|</li>
+                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Contact</a></li>
                     </ul>
 
                 </div>
             </nav>
 
+            <!-- Carousel 5s interval autoslide -->
+            <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('images/slide1.jpg') }}" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('images/slide2.jpg') }}" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('images/slide3.jpg') }}" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('images/slide4.jpg') }}" alt="Fourth slide">
+                    </div>
+                </div>
+            </div>
+                
         <!-- Bootstrap JS and Popper.js (for interactivity) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
