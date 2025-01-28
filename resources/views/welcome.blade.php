@@ -138,6 +138,18 @@
                     </div>
                 </div>
             </div>
+
+            <!-- separator -->
+            <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill" d="M0 0L2600 0 2600 69.1 0 0z"></path>
+                    <path class="elementor-shape-fill" style="opacity:0.5" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
+                    <path class="elementor-shape-fill" style="opacity:0.25" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
+                </svg>		
+            </div>	
+
+            <!-- Filler content to scroll page -->
+            <img src="{{ asset('images/slide1.jpg') }}" alt="filler">	
                 
         <!-- Bootstrap JS and Popper.js (for interactivity) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
