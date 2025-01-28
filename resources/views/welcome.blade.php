@@ -13,6 +13,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
         <style>
             /* Navbars CSS */
             .nav-1 {
@@ -27,6 +28,15 @@
                 background-color: #426B56;
                 height: 132px;
             }
+
+            .nav-2.fixed {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000; /* Ensure it is above other elements */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+            }
+            
             .nav-logo {
                 color: #AF9756;
             }
@@ -131,6 +141,19 @@
                 
         <!-- Bootstrap JS and Popper.js (for interactivity) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+        
+        <script>
+            // Fixed navbar on scroll
+            window.addEventListener('scroll', function() {
+                var nav1 = document.querySelector('.nav-1');
+                var nav2 = document.querySelector('.nav-2');
+                var nav1Height = nav1.offsetHeight;
+                if (window.scrollY > nav1Height) {
+                    nav2.classList.add('fixed');
+                } else {
+                    nav2.classList.remove('fixed');
+                }
+            });
+        </script>
     </body>
 </html>
