@@ -74,6 +74,28 @@
                 transform: scale(1.1);
             }
 
+            /* Separator CSS */
+
+            .elementor-shape-bottom {
+                z-index: 2;
+                pointer-events: none;
+                transform: rotate(180deg);
+                bottom: -1px;
+                direction: ltr;
+                left: 0;
+                line-height: 0;
+                overflow: hidden;
+                position: absolute;
+                width: 100%;
+                box-sizing: border-box;
+                --swiper-navigation-size: 44px;
+                --swiper-pagination-bullet-size: 6px;
+                --swiper-pagination-bullet-horizontal-gap: 6px;
+                --widgets-spacing: 20px 20px;
+                --widgets-spacing-row: 20px;
+                --widgets-spacing-column: 20px;
+            }
+
             
         </style>
     </head>
@@ -120,6 +142,7 @@
 
                 </div>
             </nav>
+            <div id="navbar-placeholder"></div>
 
             <!-- Carousel 5s interval autoslide -->
             <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -159,11 +182,16 @@
             window.addEventListener('scroll', function() {
                 var nav1 = document.querySelector('.nav-1');
                 var nav2 = document.querySelector('.nav-2');
+                var placeholder = document.getElementById('navbar-placeholder');
                 var nav1Height = nav1.offsetHeight;
+                var nav2Height = nav2.offsetHeight;
+
                 if (window.scrollY > nav1Height) {
                     nav2.classList.add('fixed');
+                    placeholder.style.height = nav2Height + 'px';
                 } else {
                     nav2.classList.remove('fixed');
+                    placeholder.style.height = '0px';
                 }
             });
         </script>
