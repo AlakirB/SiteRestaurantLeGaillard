@@ -14,186 +14,94 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
-        <style>
-            /* Navbars CSS */
-            .nav-1 {
-                background-color: #292929;
-                height: 50px;
-            }
-            .header-left, .header-right {
-                color: #FFFFFFA8;
-            }
-            
-            .nav-2 {
-                background-color: #426B56;
-                height: 132px;
-            }
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
 
-            .nav-2.fixed {
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 1000; /* Ensure it is above other elements */
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
-            }
-            
-            .nav-logo {
-                color: #AF9756;
-            }
-            .nav-link {
-                color: #AF9756;
-                font-size: 1.2rem;
-            }
-            .nav-link:hover, #focus-link {
-                color: white;
-                border-bottom: 0.2rem solid white;
-            }
-            .logo-img {
-                max-width: 100%;
-                height: auto;
-                max-height: 120px; /* Adjust this value as needed */
-            }
-
-            .separator {
-                padding: 0 10px; /* Adjust the spacing as needed */
-                color: white; /* Adjust the color as needed */
-                line-height: 2.5; /* Adjust the line-height to match the nav-link */
-            }
-            
-            /* Carousel CSS */
-            .carousel-item {
-                height: 700px;
-            }
-            .carousel-item img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                transition: transform 5s ease;
-            }
-            .carousel-item.active img {
-                transform: scale(1.1);
-            }
-
-            /* Separator CSS */
-
-            .elementor-shape-bottom {
-                z-index: 2;
-                pointer-events: none;
-                transform: rotate(180deg);
-                bottom: -1px;
-                direction: ltr;
-                left: 0;
-                line-height: 0;
-                overflow: hidden;
-                position: absolute;
-                width: 100%;
-                box-sizing: border-box;
-                --swiper-navigation-size: 44px;
-                --swiper-pagination-bullet-size: 6px;
-                --swiper-pagination-bullet-horizontal-gap: 6px;
-                --widgets-spacing: 20px 20px;
-                --widgets-spacing-row: 20px;
-                --widgets-spacing-column: 20px;
-            }
-
-            
-        </style>
     </head>
     <body>
-            <!-- Header -->
-            <nav class="nav-1 py-3">
-                <div class="container d-flex justify-content-between align-items-center">
+        <!-- Header -->
+        <nav class="nav-1 py-3">
+            <div class="container d-flex justify-content-between align-items-center">
 
-                    <!-- Left side of the header -->
-                    <div class="header-left">
-                        <span class="header-item">Restaurant Lounge à Annemasse</span>
-                    </div>
-
-                    <!-- Right side of the header -->
-                    <div class="header-right">
-                        <span class="header-item">Ouvert tous les jours de 8h à 22h | Informations et réservation au 0123456789</span>
-                    </div>
-
+                <!-- Left side of the header -->
+                <div class="header-left">
+                    <span class="header-item">Restaurant Lounge à Annemasse</span>
                 </div>
-            </nav>
 
-            <!-- NavBar -->
-            <nav class="nav-2 py-0.2">
-                <div class="container d-flex justify-content-between align-items-center">
-
-                    <!-- Left side of the nav -->
-                    <ul class="nav">
-                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link" id="focus-link">Accueil</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
-                        <li class="nav-item separator">|</li>
-                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">La Carte</a></li>
-                    </ul>
-
-                    <!-- Center -->
-                    <a href="#" class="nav-logo d-flex align-items-center text-decoration-none">
-                        <img src="{{ asset('images/logo.png') }}" alt="Logo du restaurant" class="me-3 logo-img">
-                    </a>
-
-                    <!-- Right side of the nav -->
-                    <ul class="nav">
-                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Le Restaurant</a></li>
-                        <li class="nav-item separator">|</li>
-                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Contact</a></li>
-                    </ul>
-
+                <!-- Right side of the header -->
+                <div class="header-right">
+                    <span class="header-item">Ouvert tous les jours de 8h à 22h | Informations et réservation au 0123456789</span>
                 </div>
-            </nav>
-            <div id="navbar-placeholder"></div>
 
-            <!-- Carousel 5s interval autoslide -->
-            <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{ asset('images/slide1.jpg') }}" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('images/slide2.jpg') }}" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('images/slide3.jpg') }}" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('images/slide4.jpg') }}" alt="Fourth slide">
-                    </div>
+            </div>
+        </nav>
+
+        <!-- NavBar -->
+        <nav class="nav-2 py-0.2">
+            <div class="container d-flex justify-content-between align-items-center">
+
+                <!-- Left side of the nav -->
+                <ul class="nav">
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link" id="focus-link">Accueil</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
+                    <li class="nav-item separator">|</li>
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">La Carte</a></li>
+                </ul>
+
+                <!-- Center -->
+                <a href="#" class="nav-logo d-flex align-items-center text-decoration-none">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo du restaurant" class="me-3 logo-img">
+                </a>
+
+                <!-- Right side of the nav -->
+                <ul class="nav">
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Le Restaurant</a></li>
+                    <li class="nav-item separator">|</li>
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div id="navbar-placeholder"></div>
+
+        <!-- Carousel 5s interval autoslide -->
+        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{ asset('images/slide1.jpg') }}" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('images/slide2.jpg') }}" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('images/slide3.jpg') }}" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('images/slide4.jpg') }}" alt="Fourth slide">
                 </div>
             </div>
+        </div>
 
-            <!-- separator -->
-            <div class="elementor-shape elementor-shape-bottom" data-negative="false">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
-                    <path class="elementor-shape-fill" d="M0 0L2600 0 2600 69.1 0 0z"></path>
-                    <path class="elementor-shape-fill" style="opacity:0.5" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
-                    <path class="elementor-shape-fill" style="opacity:0.25" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
-                </svg>		
-            </div>	
-
-            <!-- Filler content to scroll page -->
-            <img src="{{ asset('images/slide1.jpg') }}" alt="filler">	
+        <!-- Elements separator -->
+        <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <path d="M0 17L211 21L423 29L634 24L846 18L1057 16L1269 19L1480 18L1692 14L1903 13L1903 0L1692 0L1480 0L1269 0L1057 0L846 0L634 0L423 0L211 0L0 0Z" fill="#a8a89e"></path>
+            <path d="M0 51L211 64L423 55L634 46L846 52L1057 44L1269 35L1480 56L1692 56L1903 37L1903 11L1692 12L1480 16L1269 17L1057 14L846 16L634 22L423 27L211 19L0 15Z" fill="#898981"></path>
+            <path d="M0 66L211 74L423 61L634 54L846 58L1057 52L1269 43L1480 73L1692 67L1903 44L1903 35L1692 54L1480 54L1269 33L1057 42L846 50L634 44L423 53L211 62L0 49Z" fill="#6b6b66"></path>
+            <path d="M0 75L211 81L423 70L634 66L846 71L1057 66L1269 62L1480 83L1692 75L1903 64L1903 42L1692 65L1480 71L1269 41L1057 50L846 56L634 52L423 59L211 72L0 64Z" fill="#4e4e4c"></path>
+            <path d="M0 101L211 101L423 101L634 101L846 101L1057 101L1269 101L1480 101L1692 101L1903 101L1903 62L1692 73L1480 81L1269 60L1057 64L846 69L634 64L423 68L211 79L0 73Z" fill="#333333"></path>
+        </svg>
+        <!-- About us  -->
+        <div class="block-about-us">
+            <div class="content-about-us">
+                <h2 class="mb-4">Restaurant Le Gaillard</h2>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec</p>
+            </div>
+        </div>
                 
-        <!-- Bootstrap JS and Popper.js (for interactivity) -->
+        <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
-        <script>
-            // Fixed navbar on scroll
-            window.addEventListener('scroll', function() {
-                var nav1 = document.querySelector('.nav-1');
-                var nav2 = document.querySelector('.nav-2');
-                var placeholder = document.getElementById('navbar-placeholder');
-                var nav1Height = nav1.offsetHeight;
-                var nav2Height = nav2.offsetHeight;
+        <!-- Custom JS -->
+        <script src="{{ asset('js/welcome.js') }}"></script>
 
-                if (window.scrollY > nav1Height) {
-                    nav2.classList.add('fixed');
-                    placeholder.style.height = nav2Height + 'px';
-                } else {
-                    nav2.classList.remove('fixed');
-                    placeholder.style.height = '0px';
-                }
-            });
-        </script>
     </body>
 </html>
