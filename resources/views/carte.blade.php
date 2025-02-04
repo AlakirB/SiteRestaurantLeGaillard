@@ -45,9 +45,9 @@
 
                 <!-- Left side of the nav -->
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link" id="focus-link">Accueil</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Accueil</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
                     <li class="nav-item separator">|</li>
-                    <li class="nav-item"><a href="{{ route('carte') }}" class="nav-link">La Carte</a></li>
+                    <li class="nav-item"><a href="{{ route('carte') }}" class="nav-link" id="focus-link">La Carte</a></li>
                 </ul>
 
                 <!-- Center -->
@@ -66,23 +66,8 @@
         </nav>
         <div id="navbar-placeholder"></div>
 
-        <!-- Carousel 5s interval autoslide -->
-        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ asset('images/slide1.jpg') }}" alt="1ere image">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide2.jpg') }}" alt="2nde image">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide3.jpg') }}" alt="3e image">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide4.jpg') }}" alt="4e image">
-                </div>
-            </div>
-        </div>
+        <!-- Hero Image (image put at the top of the page) -->
+        <img class="hero-image" src="{{ asset('images/slide3.jpg') }}" alt="Image du restaurant">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -94,15 +79,31 @@
         </svg>
 
         <!-- About us  -->
-        <div class="block-about-us">
-            <div class="about-us-content">
-                <h2 class="about-us-title">Restaurant Le Gaillard</h2>
-                <p class="about-us-text">
-                    Bienvenue au Gaillard, le restaurant lounge incontournable de Marrakech. Situé boulevard Mohamed VI, à 5 minutes à peine du centre ville, notre établissement vous invite à découvrir une cuisine inventive dans un cadre à la décoration raffinée.
-                    Dès votre arrivée, vous serez séduit par l’atmosphère à la fois chic et décontractée de notre restaurant. Le mélange subtil entre les influences traditionnelles marocaines et notre style résolument contemporain en fait un lieu unique. Nos 3 espaces cosy et notre magnifique terrasse vous offriront un espace intimiste pour profiter d’un moment privilégié.
-                    Notre chef vous fera voyager au gré de ses inspirations, avec une carte mariant produits locaux de qualité et touches culinaires venues du monde entier. Chaque assiette raconte une histoire et fait la part belle aux épices et aux saveurs marocaines. Notre sommelier saura vous conseiller le vin idéal pour accompagner votre repas.
-                    En soirée, Le Gaillard se transforme en restaurant-lounge et vous invite à siroter l’un de nos cocktails originaux tout en écoutant la musique de notre DJ résident ou des groupe de musique qui se produisent en live sur notre scène dédiée. Une ambiance festive propice à passer un agréable moment entre amis.
-                    Pour une expérience gastronomique et sensorielle hors du commun au cœur de Marrakech, réservez dès maintenant votre table au Gaillard. Nous nous réjouissons de vous accueillir bientôt dans notre havre de paix et de raffinement.
+        <div class="block-carte">
+            <div class="carte-content">
+                <h2 class="carte-title-main">La Carte du Restaurant</h2>
+                <h3 class="carte-title-secondary">Entrées</h3>
+                <p class="carte-text">
+                    César aux gambas et poulet, burratina et vieux parmesan ----- 180dh
+                    Caesar with prawns and chicken, burratina and old parmesan
+                    
+                    Salade de bœuf thaïlandaise (fruit à coques) ---------------- 180dh
+                    Thai Beef Salad
+
+                    Salade nordique et œuf de caille, vinaigrette à la savora --- 260dh
+                    Nordic salad and quail egg, vinaigrette a la savoura
+
+                    Guacamole d’avocat, gambas tempura et nachos fait-maison ---- 180dh
+                    Avocado guacamole, tempura prawns and homemade nachos
+
+                    Tartare de tomates cœur de bœuf et sa buratta artisanale ---- 210dh
+                    Beef heart tomato tartare and artisanal buratta
+
+                    Asperge rôtie, œuf de poule poché et sabayon au safran pur -- 180dh
+                    Roasted asparagus, poached hen's egg and pure saffron sabayon
+
+                    Carpaccio de bœuf, huile d’olive et feuilles de roquette ---- 180dh
+                    Beef carpaccio, olive oil and rocket leaves
                 </p>
             </div>
         </div>
