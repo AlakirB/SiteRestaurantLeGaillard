@@ -107,7 +107,7 @@
     /* Bloc Carte CSS */
     .block-carte {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         background-color: #333;
     }
 
@@ -129,15 +129,24 @@
         font-weight: 600;
     }
 
+    .carte-appetizer-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
     .carte-text {
         text-align: center; 
-        max-width:718px; 
-        margin-left:auto; 
-        margin-right:auto; 
-        display:flex; 
-        position:relative; 
+        width: 40vw;
         font-size: 1rem; 
         font-weight: 400; 
         line-height: 1.5; 
         color: #BEBEBE;
+        margin-top: 50px;
+    }
+
+    .carte-text-main {
+        font-weight: bold;
+        color:#AF9756;
     }

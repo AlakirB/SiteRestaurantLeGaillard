@@ -78,33 +78,43 @@
             <path d="M0 101L211 101L423 101L634 101L846 101L1057 101L1269 101L1480 101L1692 101L1903 101L1903 62L1692 73L1480 81L1269 60L1057 64L846 69L634 64L423 68L211 79L0 73Z" fill="#333333"></path>
         </svg>
 
-        <!-- About us  -->
+        <!-- La Carte  -->
         <div class="block-carte">
             <div class="carte-content">
                 <h2 class="carte-title-main">La Carte du Restaurant</h2>
-                <h3 class="carte-title-secondary">Entrées</h3>
-                <p class="carte-text">
-                    César aux gambas et poulet, burratina et vieux parmesan ----- 180dh
-                    Caesar with prawns and chicken, burratina and old parmesan
-                    
-                    Salade de bœuf thaïlandaise (fruit à coques) ---------------- 180dh
-                    Thai Beef Salad
-
-                    Salade nordique et œuf de caille, vinaigrette à la savora --- 260dh
-                    Nordic salad and quail egg, vinaigrette a la savoura
-
-                    Guacamole d’avocat, gambas tempura et nachos fait-maison ---- 180dh
-                    Avocado guacamole, tempura prawns and homemade nachos
-
-                    Tartare de tomates cœur de bœuf et sa buratta artisanale ---- 210dh
-                    Beef heart tomato tartare and artisanal buratta
-
-                    Asperge rôtie, œuf de poule poché et sabayon au safran pur -- 180dh
-                    Roasted asparagus, poached hen's egg and pure saffron sabayon
-
-                    Carpaccio de bœuf, huile d’olive et feuilles de roquette ---- 180dh
-                    Beef carpaccio, olive oil and rocket leaves
-                </p>
+                <div class="carte-appetizer">
+                    <h3 class="carte-title-secondary">Entrées</h3>
+                    <ul class="carte-appetizer-list">
+                        <li class="carte-text">
+                            <span class="carte-text-main">César aux gambas et poulet, burratina et vieux parmesan ----- 180dh</span> <br> 
+                            <i>Caesar with prawns and chicken, burratina and old parmesan</i>
+                        </li>
+                        <li class="carte-text">
+                            <span class="carte-text-main">Salade de bœuf thaïlandaise (fruit à coques) ---------------- 180dh</span> <br>
+                            <i>Thai Beef Salad</i>
+                        </li>
+                        <li class="carte-text">
+                            <span class="carte-text-main">Salade nordique et œuf de caille, vinaigrette à la savora --- 260dh</span> <br>
+                            <i>Nordic salad and quail egg, vinaigrette a la savoura</i>
+                        </li>
+                        <li class="carte-text">
+                            <span class="carte-text-main">Guacamole d’avocat, gambas tempura et nachos fait-maison ---- 180dh</span> <br>
+                            <i>Avocado guacamole, tempura prawns and homemade nachos</i>
+                        </li>
+                        <li class="carte-text">
+                            <span class="carte-text-main">Tartare de tomates cœur de bœuf et sa buratta artisanale ---- 210dh</span> <br>
+                            <i>Beef heart tomato tartare and artisanal buratta</i>
+                        </li>
+                        <li class="carte-text">
+                            <span class="carte-text-main">Asperge rôtie, œuf de poule poché et sabayon au safran pur -- 180dh</span> <br>
+                            <i>Roasted asparagus, poached hen's egg and pure saffron sabayon</i>
+                        </li>
+                        <li class="carte-text">
+                            <span class="carte-text-main">Carpaccio de bœuf, huile d’olive et feuilles de roquette ---- 180dh</span> <br>
+                            <i>Beef carpaccio, olive oil and rocket leaves</i>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
