@@ -45,7 +45,7 @@
 
                 <!-- Left side of the nav -->
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link" id="focus-link">Accueil</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Accueil</a></li> 
                     <li class="nav-item separator">|</li>
                     <li class="nav-item"><a href="{{ route('carte') }}" class="nav-link">La Carte</a></li>
                 </ul>
@@ -57,7 +57,7 @@
 
                 <!-- Right side of the nav -->
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ route('restaurant') }}" class="nav-link">Le Restaurant</a></li>
+                    <li class="nav-item"><a href="{{ route('restaurant') }}" class="nav-link" id="focus-link">Le Restaurant</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
                     <li class="nav-item separator">|</li>
                     <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Contact</a></li>
                 </ul>
@@ -66,23 +66,8 @@
         </nav>
         <div id="navbar-placeholder"></div>
 
-        <!-- Carousel 5s interval autoslide -->
-        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ asset('images/slide1.jpg') }}" alt="1ere image">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide2.jpg') }}" alt="2nde image">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide3.jpg') }}" alt="3e image">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide4.jpg') }}" alt="4e image">
-                </div>
-            </div>
-        </div>
+        <!-- Hero Image (image put at the top of the page) -->
+        <img class="hero-image" src="{{ asset('images/slide2.jpg') }}" alt="Image du restaurant illustrant le restaurant">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -93,18 +78,29 @@
             <path d="M0 101L211 101L423 101L634 101L846 101L1057 101L1269 101L1480 101L1692 101L1903 101L1903 62L1692 73L1480 81L1269 60L1057 64L846 69L634 64L423 68L211 79L0 73Z" fill="#333333"></path>
         </svg>
 
-        <!-- About us  -->
-        <div class="block-about-us">
-            <div class="about-us-content">
-                <h2 class="about-us-title">Restaurant Le Gaillard</h2>
-                <p class="about-us-text">
-                    Bienvenue au Gaillard, le restaurant lounge incontournable de Marrakech. Situé boulevard Mohamed VI, à 5 minutes à peine du centre ville, notre établissement vous invite à découvrir une cuisine inventive dans un cadre à la décoration raffinée.
-                    Dès votre arrivée, vous serez séduit par l’atmosphère à la fois chic et décontractée de notre restaurant. Le mélange subtil entre les influences traditionnelles marocaines et notre style résolument contemporain en fait un lieu unique. Nos 3 espaces cosy et notre magnifique terrasse vous offriront un espace intimiste pour profiter d’un moment privilégié.
-                    Notre chef vous fera voyager au gré de ses inspirations, avec une carte mariant produits locaux de qualité et touches culinaires venues du monde entier. Chaque assiette raconte une histoire et fait la part belle aux épices et aux saveurs marocaines. Notre sommelier saura vous conseiller le vin idéal pour accompagner votre repas.
-                    En soirée, Le Gaillard se transforme en restaurant-lounge et vous invite à siroter l’un de nos cocktails originaux tout en écoutant la musique de notre DJ résident ou des groupe de musique qui se produisent en live sur notre scène dédiée. Une ambiance festive propice à passer un agréable moment entre amis.
-                    Pour une expérience gastronomique et sensorielle hors du commun au cœur de Marrakech, réservez dès maintenant votre table au Gaillard. Nous nous réjouissons de vous accueillir bientôt dans notre havre de paix et de raffinement.
-                </p>
+        <!-- Le Restaurant  -->
+        <div class="block-restaurant">
+            <div class="restaurant-content">
+                <div class="restaurant-image">
+                    <img src="{{ asset('images/restaurant-1.jpg') }}" alt="Image du restaurant">
+                </div>
+                <div class="restaurant-text">
+                    <h2 class="restaurant-title">Le Restaurant Le Gaillard</h2>
+                    <p class="restaurant-text">
+                        Bienvenue au Gaillard, le restaurant lounge intimiste situé en plein cœur de la médina de Marrakech.<br>
+                        Notre établissement à la décoration moderne et raffinée vous invite à découvrir une cuisine inventive mariant produits locaux de qualité et inspirations venues du monde entier.<br>
+                        Installez-vous dans notre salle cosy ou sur notre magnifique terrasse pour apprécier l’atmosphère festive et les cocktails originaux concoctés par nos barmen. Le Gaillard est le lieu idéal pour passer une soirée sous le signe de la gastronomie, du partage et de la fête.<br>
+                        Réservez vite votre table pour vivre une expérience inoubliable au cœur de Marrakech.<br>
+                    </p>
+                </div>
             </div>
+            <div class="restaurant-content">
+                <div class="restaurant-text">
+                    <h2 class="restaurant-title">Nos Valeurs</h2>
+                    <p class="restaurant-text">
+                        Le Gaillard est un lieu de partage et de convivialité où l’on se sent bien. Notre équipe est à votre écoute pour vous offrir une expérience unique et inoubliable.<br>
+                        Nous mettons un point d’honneur à travailler avec des produits locaux de qualité et à proposer une cuisine inventive et raffinée.<br>
+                        Notre carte évolue au fil des saisons pour vous proposer des plats toujours plus créatifs et savoureux.<br>
         </div>
 
         <!-- Elements separator -->

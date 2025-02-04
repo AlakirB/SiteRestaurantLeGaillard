@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/carte', function () {
     return view('carte');
 })->name('carte');
+
+Route::get('/restaurant', function () {
+    return view('restaurant');
+})->name('restaurant');

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Restaurant Le Gaillard - Bienvenue</title>
+        <title>Restaurant Le Gaillard - La Carte</title>
 
         <!-- Favicon -->
         <link rel="icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
@@ -45,9 +45,9 @@
 
                 <!-- Left side of the nav -->
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Accueil</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Accueil</a></li> 
                     <li class="nav-item separator">|</li>
-                    <li class="nav-item"><a href="{{ route('carte') }}" class="nav-link" id="focus-link">La Carte</a></li>
+                    <li class="nav-item"><a href="{{ route('carte') }}" class="nav-link" id="focus-link">La Carte</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
                 </ul>
 
                 <!-- Center -->
@@ -57,7 +57,7 @@
 
                 <!-- Right side of the nav -->
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Le Restaurant</a></li>
+                    <li class="nav-item"><a href="{{ route('restaurant') }}" class="nav-link">Le Restaurant</a></li>
                     <li class="nav-item separator">|</li>
                     <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Contact</a></li>
                 </ul>
@@ -67,7 +67,7 @@
         <div id="navbar-placeholder"></div>
 
         <!-- Hero Image (image put at the top of the page) -->
-        <img class="hero-image" src="{{ asset('images/slide3.jpg') }}" alt="Image du restaurant">
+        <img class="hero-image" src="{{ asset('images/slide1.jpg') }}" alt="Image du restaurant illustrant la carte">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
