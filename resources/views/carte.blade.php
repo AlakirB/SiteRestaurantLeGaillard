@@ -59,7 +59,7 @@
                 <ul class="nav">
                     <li class="nav-item"><a href="{{ route('restaurant') }}" class="nav-link">Le Restaurant</a></li>
                     <li class="nav-item separator">|</li>
-                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                 </ul>
 
             </div>

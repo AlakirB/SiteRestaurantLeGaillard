@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Restaurant Le Gaillard - Le Restaurant</title>
+        <title>Restaurant Le Gaillard - Contact</title>
 
         <!-- Favicon -->
         <link rel="icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
@@ -57,9 +57,9 @@
 
                 <!-- Right side of the nav -->
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ route('restaurant') }}" class="nav-link" id="focus-link">Le Restaurant</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
+                    <li class="nav-item"><a href="{{ route('restaurant') }}" class="nav-link">Le Restaurant</a></li> <!-- Add the id="focus-link" to the link you want to focus on -->
                     <li class="nav-item separator">|</li>
-                    <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link" id="focus-link">Contact</a></li>
                 </ul>
 
             </div>
@@ -67,7 +67,7 @@
         <div id="navbar-placeholder"></div>
 
         <!-- Hero Image (image put at the top of the page) -->
-        <img class="hero-image-restaurant" src="{{ asset('images/slide2.jpg') }}" alt="Image du restaurant illustrant le restaurant">
+        <img class="hero-image-contact" src="{{ asset('images/slide3.jpg') }}" alt="Image du restaurant">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -78,30 +78,42 @@
             <path d="M0 101L211 101L423 101L634 101L846 101L1057 101L1269 101L1480 101L1692 101L1903 101L1903 62L1692 73L1480 81L1269 60L1057 64L846 69L634 64L423 68L211 79L0 73Z" fill="#333333"></path>
         </svg>
 
-        <!-- Le Restaurant  -->
-        <div class="block-restaurant">
-            <div class="restaurant-element">
-                <img class="restaurant-image" src="{{ asset('images/restaurant-1.jpg') }}" alt="Image du restaurant">
-                <div class="restaurant-content">
-                    <h2 class="restaurant-title">Le Restaurant Le Gaillard</h2>
-                    <p class="restaurant-text">
-                        Bienvenue au Gaillard, le restaurant lounge intimiste situé en plein cœur de la médina de Marrakech.<br>
-                        Notre établissement à la décoration moderne et raffinée vous invite à découvrir une cuisine inventive mariant produits locaux de qualité et inspirations venues du monde entier.<br>
-                        Installez-vous dans notre salle cosy ou sur notre magnifique terrasse pour apprécier l’atmosphère festive et les cocktails originaux concoctés par nos barmen. Le Gaillard est le lieu idéal pour passer une soirée sous le signe de la gastronomie, du partage et de la fête.<br>
-                        Réservez vite votre table pour vivre une expérience inoubliable au cœur de Marrakech.<br>
-                    </p>
-                </div>
+        <!-- Contact  -->
+        <div class="block-contact">
+            <div class="contact-element">
+                <img src="{{ asset('images/filler-google.png') }}" height="600" alt="avis google"/>
             </div>
-            <div class="restaurant-element">
-                <div class="restaurant-content">
-                    <h2 class="restaurant-title">Nos Valeurs</h2>
-                    <p class="restaurant-text">
-                        Le Gaillard est un lieu de partage et de convivialité où l’on se sent bien. Notre équipe est à votre écoute pour vous offrir une expérience unique et inoubliable.<br>
-                        Nous mettons un point d’honneur à travailler avec des produits locaux de qualité et à proposer une cuisine inventive et raffinée.<br>
-                        Notre carte évolue au fil des saisons pour vous proposer des plats toujours plus créatifs et savoureux.<br>
-                    </p>
+            <div class="contact-element">
+
+                <div class="contact-title">
+                    <img src="{{ asset('images/icon-location.png') }}" alt="icone location"/>
+                    <h2>Adresse</h2>
                 </div>
-                <img class="restaurant-image" src="{{ asset('images/restaurant-2.jpg') }}" alt="Image du restaurant">
+                <p class="contact-text">
+                    12 rue de la Liberation, 74 240<br>
+                    Annemasse, France
+                </p>
+
+                <div class="contact-title">
+                    <img src="{{ asset('images/icon-telephone.png') }}" alt="icone telephone"/>
+                    <h2>Telephone</h2>
+                </div>
+                <p class="contact-text">
+                    0123456789<br>
+                    0987654321
+                </p>
+
+            </div>
+            <div class="contact-links">
+                <a href="https://www.facebook.com" class="contact-link">
+                    <img src="{{ asset('images/icon-facebook.png') }}" alt="icone facebook"/>
+                </a>
+                <a href="https://www.instagram.com" class="contact-link">
+                    <img src="{{ asset('images/icon-instagram.png') }}" alt="icone instagram"/>
+                </a>
+                <a href="https://www.twitter.com" class="contact-link">
+                    <img src="{{ asset('images/icon-twitter.png') }}" alt="icone twitter"/>
+                </a>
             </div>
         </div>
 

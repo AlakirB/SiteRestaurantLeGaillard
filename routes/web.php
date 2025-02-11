@@ -24,3 +24,7 @@ Route::get('/carte', function () {
 Route::get('/restaurant', function () {
     return view('restaurant');
 })->name('restaurant');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
