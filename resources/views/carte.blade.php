@@ -15,7 +15,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.0">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@
         <div id="navbar-placeholder"></div>
 
         <!-- Hero Image (image put at the top of the page) -->
-        <img class="hero-image" src="{{ asset('images/slide1.jpg') }}" alt="Image du restaurant illustrant la carte">
+        <img class="hero-image-carte" src="{{ asset('images/slide1.jpg') }}" alt="Image du restaurant illustrant la carte">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">

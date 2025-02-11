@@ -15,7 +15,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.0">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@
         <div id="navbar-placeholder"></div>
 
         <!-- Hero Image (image put at the top of the page) -->
-        <img class="hero-image" src="{{ asset('images/slide2.jpg') }}" alt="Image du restaurant illustrant le restaurant">
+        <img class="hero-image-restaurant" src="{{ asset('images/slide2.jpg') }}" alt="Image du restaurant illustrant le restaurant">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -80,11 +80,9 @@
 
         <!-- Le Restaurant  -->
         <div class="block-restaurant">
-            <div class="restaurant-content">
-                <div class="restaurant-image">
-                    <img src="{{ asset('images/restaurant-1.jpg') }}" alt="Image du restaurant">
-                </div>
-                <div class="restaurant-text">
+            <div class="restaurant-element">
+                <img class="restaurant-image" src="{{ asset('images/restaurant-1.jpg') }}" alt="Image du restaurant">
+                <div class="restaurant-content">
                     <h2 class="restaurant-title">Le Restaurant Le Gaillard</h2>
                     <p class="restaurant-text">
                         Bienvenue au Gaillard, le restaurant lounge intimiste situé en plein cœur de la médina de Marrakech.<br>
@@ -94,13 +92,17 @@
                     </p>
                 </div>
             </div>
-            <div class="restaurant-content">
-                <div class="restaurant-text">
+            <div class="restaurant-element">
+                <div class="restaurant-content">
                     <h2 class="restaurant-title">Nos Valeurs</h2>
                     <p class="restaurant-text">
                         Le Gaillard est un lieu de partage et de convivialité où l’on se sent bien. Notre équipe est à votre écoute pour vous offrir une expérience unique et inoubliable.<br>
                         Nous mettons un point d’honneur à travailler avec des produits locaux de qualité et à proposer une cuisine inventive et raffinée.<br>
                         Notre carte évolue au fil des saisons pour vous proposer des plats toujours plus créatifs et savoureux.<br>
+                    </p>
+                </div>
+                <img class="restaurant-image" src="{{ asset('images/restaurant-2.jpg') }}" alt="Image du restaurant">
+            </div>
         </div>
 
         <!-- Elements separator -->

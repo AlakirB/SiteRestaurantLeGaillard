@@ -92,7 +92,7 @@
 /* Specific to carte page */
 
     /* Hero image CSS */
-    .hero-image {
+    .hero-image-carte {
         background-size: cover;
         background-position: center;
         height: 50vh;
@@ -149,4 +149,75 @@
     .carte-text-main {
         font-weight: bold;
         color:#AF9756;
+    }
+
+/* specific to restaurant page */
+
+    /* Hero image CSS */
+    .hero-image-restaurant {
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+    }
+
+    /* Bloc restaurant CSS */
+    .block-restaurant {
+        width: 100%;
+        height: 110vh;
+        background-color: #333;
+    }
+
+    .restaurant-element {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .restaurant-image {
+        background-size: cover;
+        background-position: center;
+        height: 45vh;
+        width: 40%;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+    }
+
+    .restaurant-content {
+        height: 50vh;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .restaurant-title {
+        color: #AF9756; 
+        text-align: center; 
+        padding-top: 20px; 
+        font-family: 'Rochester', Sans-serif; 
+        font-size: 40px; 
+        font-weight: 600;
+    }
+
+    .restaurant-text {
+        text-align: center; 
+        margin-left:auto; 
+        margin-right:auto; 
+        display:flex; 
+        position:relative; 
+        font-size: 1rem; 
+        font-weight: 400; 
+        line-height: 1.5; 
+        color: #BEBEBE;
     }
