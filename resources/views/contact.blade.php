@@ -15,7 +15,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}?=0">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
@@ -84,36 +84,37 @@
                 <img src="{{ asset('images/filler-google.png') }}" height="600" alt="avis google"/>
             </div>
             <div class="contact-element">
+                <div class="contact-element-data">
+                    <div class="contact-title">
+                        <img src="{{ asset('images/icon-location.png') }}" alt="icone location"/>
+                        <h2>Adresse</h2>
+                    </div>
+                    <p class="contact-text">
+                        12 rue de la Liberation, 74 240<br>
+                        Annemasse, France
+                    </p>
 
-                <div class="contact-title">
-                    <img src="{{ asset('images/icon-location.png') }}" alt="icone location"/>
-                    <h2>Adresse</h2>
+                    <div class="contact-title">
+                        <img src="{{ asset('images/icon-telephone.png') }}" alt="icone telephone"/>
+                        <h2>Telephone</h2>
+                    </div>
+                    <p class="contact-text">
+                        0123456789<br>
+                        0987654321
+                    </p>
                 </div>
-                <p class="contact-text">
-                    12 rue de la Liberation, 74 240<br>
-                    Annemasse, France
-                </p>
-
-                <div class="contact-title">
-                    <img src="{{ asset('images/icon-telephone.png') }}" alt="icone telephone"/>
-                    <h2>Telephone</h2>
+            
+                <div class="contact-element-links">
+                    <a href="https://www.facebook.com" class="contact-link">
+                        <img src="{{ asset('images/icon-facebook.png') }}" alt="icone facebook"/>
+                    </a>
+                    <a href="https://www.instagram.com" class="contact-link">
+                        <img src="{{ asset('images/icon-instagram.png') }}" alt="icone instagram"/>
+                    </a>
+                    <a href="https://www.twitter.com" class="contact-link">
+                        <img src="{{ asset('images/icon-twitter.png') }}" alt="icone twitter"/>
+                    </a>
                 </div>
-                <p class="contact-text">
-                    0123456789<br>
-                    0987654321
-                </p>
-
-            </div>
-            <div class="contact-links">
-                <a href="https://www.facebook.com" class="contact-link">
-                    <img src="{{ asset('images/icon-facebook.png') }}" alt="icone facebook"/>
-                </a>
-                <a href="https://www.instagram.com" class="contact-link">
-                    <img src="{{ asset('images/icon-instagram.png') }}" alt="icone instagram"/>
-                </a>
-                <a href="https://www.twitter.com" class="contact-link">
-                    <img src="{{ asset('images/icon-twitter.png') }}" alt="icone twitter"/>
-                </a>
             </div>
         </div>
 

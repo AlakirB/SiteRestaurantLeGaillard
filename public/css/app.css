@@ -240,14 +240,14 @@
     /* Bloc contact CSS */
     .block-contact {
         width: 100%;
-        height: 110vh;
+        height: 800px;
         background-color: #333;
         display: flex;
         align-items: center;
     }
 
     .contact-element {
-        height: 110vh;
+        height: 700px;
         width: 45%;
         display: flex;
         flex-direction: column;
@@ -284,6 +284,14 @@
         color: #BEBEBE;
     }
 
+    .contact-element-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 400px;
+        width: 400px;
+    }
     .contact-link {
         text-decoration: none;
     }
