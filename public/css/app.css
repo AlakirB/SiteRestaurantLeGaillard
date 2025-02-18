@@ -1,3 +1,4 @@
+/* Ensure the page can't go over 100% width and no scrolling sideway */
 html, body {
     width: 100%;
     overflow-x: hidden;
