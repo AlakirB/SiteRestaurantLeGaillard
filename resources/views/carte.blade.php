@@ -70,7 +70,7 @@
         <img class="hero-image-carte" src="{{ asset('images/slide1.jpg') }}" alt="Image du restaurant illustrant la carte">
 
         <!-- Elements separator -->
-        <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
             <path d="M0 17L211 21L423 29L634 24L846 18L1057 16L1269 19L1480 18L1692 14L1903 13L1903 0L1692 0L1480 0L1269 0L1057 0L846 0L634 0L423 0L211 0L0 0Z" fill="#a8a89e"></path>
             <path d="M0 51L211 64L423 55L634 46L846 52L1057 44L1269 35L1480 56L1692 56L1903 37L1903 11L1692 12L1480 16L1269 17L1057 14L846 16L634 22L423 27L211 19L0 15Z" fill="#898981"></path>
             <path d="M0 66L211 74L423 61L634 54L846 58L1057 52L1269 43L1480 73L1692 67L1903 44L1903 35L1692 54L1480 54L1269 33L1057 42L846 50L634 44L423 53L211 62L0 49Z" fill="#6b6b66"></path>
@@ -119,7 +119,7 @@
         </div>
 
         <!-- Elements separator -->
-        <svg class="elements-separator elements-separator-bottom" id="visual" viewBox="0 0 1903 100" width="1903" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <svg class="elements-separator elements-separator-bottom" id="visual" viewBox="0 0 1903 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
             <path d="M0 17L211 21L423 29L634 24L846 18L1057 16L1269 19L1480 18L1692 14L1903 13L1903 0L1692 0L1480 0L1269 0L1057 0L846 0L634 0L423 0L211 0L0 0Z" fill="#333333"></path>
             <path d="M0 51L211 64L423 55L634 46L846 52L1057 44L1269 35L1480 56L1692 56L1903 37L1903 11L1692 12L1480 16L1269 17L1057 14L846 16L634 22L423 27L211 19L0 15Z" fill="#4e4e4c"></path>
             <path d="M0 66L211 74L423 61L634 54L846 58L1057 52L1269 43L1480 73L1692 67L1903 44L1903 35L1692 54L1480 54L1269 33L1057 42L846 50L634 44L423 53L211 62L0 49Z" fill="#6b6b66"></path>
