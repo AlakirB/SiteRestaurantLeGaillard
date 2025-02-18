@@ -97,16 +97,13 @@
         <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ asset('images/slide1.jpg') }}" alt="1ere image">
+                    <img class="d-block w-100" src="{{ asset('images/Photo-slide-1.jpeg') }}" alt="1ere image du carousel">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide2.jpg') }}" alt="2nde image">
+                    <img class="d-block w-100" src="{{ asset('images/Photo-slide-2.jpeg') }}" alt="2nde image du carousel">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide3.jpg') }}" alt="3e image">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('images/slide4.jpg') }}" alt="4e image">
+                    <img class="d-block w-100" src="{{ asset('images/Photo-slide-3.jpeg') }}" alt="3e image du carousel">
                 </div>
             </div>
         </div>
