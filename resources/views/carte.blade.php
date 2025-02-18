@@ -53,7 +53,7 @@
 
                 <!-- Center -->
                 <a href="#" class="nav-logo d-flex align-items-center text-decoration-none">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo du restaurant" class="me-3 logo-img">
+                    <img src="{{ asset('images/logo.jpg') }}" alt="Logo du restaurant" class="me-3 logo-img">
                 </a>
 
                 <!-- Right side of the nav -->
@@ -70,7 +70,7 @@
 
                 <!-- Logo on the left -->
                 <a href="#" class="nav-logo d-flex align-items-center text-decoration-none">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo du restaurant" class="me-3 logo-img">
+                    <img src="{{ asset('images/logo.jpg') }}" alt="Logo du restaurant" class="me-3 logo-img">
                 </a>
 
                 <!-- Dropdown with links -->
