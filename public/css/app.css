@@ -10,7 +10,7 @@
 
     /* Navbars CSS */
     .nav-1 {
-        background-color: #292929;
+        background-color: #333;
         height: 50px;
     }
     .header-left, .header-right {
@@ -32,6 +32,7 @@
 
     .nav-link {
         font-size: 1.2rem;
+        color: black;
     }
     .nav-link:hover, #focus-link {
         color: white;
@@ -80,18 +81,22 @@
         }
 
         .dropdown-toggle:hover {
-            background-color: #495057; /* Slightly lighter dark background */
+            background-color: #333; /* Slightly lighter dark background */
             color: #ffffff; /* White text */
         }
 
         /* Change the background color of the dropdown menu */
         .dropdown-menu {
-            background-color: #CECCCF;
+            background-color: #333;
+        }
+
+        .dropdown-item {
+            color: cornflowerblue; /* cornflowerblue text */
         }
 
         /* Change the background color of the active dropdown item */
         .dropdown-item.active, .dropdown-item:active {
-            background-color: #CECCCF; /* Slightly lighter darkbackground */
+            background-color: #495057; /* Slightly lighter darkbackground */
             color: #ffffff; /* White text */
         }
 
@@ -136,7 +141,7 @@
     }
 
     .about-us-title {
-        color: #AF9756; 
+        color: cornflowerblue; 
         text-align: center; 
         padding-top: 20px; 
         font-family: 'Rochester', Sans-serif; 
@@ -237,7 +242,7 @@
     }
 
     .restaurant-title {
-        color: #AF9756; 
+        color: cornflowerblue; 
         text-align: center; 
         padding-top: 20px; 
         font-family: 'Rochester', Sans-serif; 
@@ -314,7 +319,7 @@
     }
 
     .contact-title h2 {
-        color: #AF9756; 
+        color: cornflowerblue; 
         text-align: center; 
         padding-top: 20px; 
         font-family: 'Rochester', Sans-serif; 
@@ -351,5 +356,8 @@
     @media (max-width: 1024px) {
         .block-contact {
             flex-direction: column;
+        }
+        .contact-element-links {
+            justify-content: space-between;
         }
     }
