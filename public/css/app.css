@@ -339,3 +339,11 @@
     .contact-link {
         text-decoration: none;
     }
+
+    /* On smaller screen */
+
+    @media (max-width: 1024px) {
+        .block-contact {
+            flex-direction: column;
+        }
+    }
