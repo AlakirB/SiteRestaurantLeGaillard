@@ -93,7 +93,7 @@
         <div id="navbar-placeholder"></div>
 
         <!-- Hero Image (image put at the top of the page) -->
-        <img class="hero-image-restaurant" src="{{ asset('images/slide2.jpg') }}" alt="Image du restaurant illustrant le restaurant">
+        <img class="hero-image-restaurant" src="{{ asset('images/Photo-table.jpeg') }}" alt="Photo d'une table 4 personnes avec des couverts">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -107,7 +107,7 @@
         <!-- Le Restaurant  -->
         <div class="block-restaurant">
             <div class="restaurant-element">
-                <img class="restaurant-image" src="{{ asset('images/restaurant-1.jpg') }}" alt="Image du restaurant">
+                <img class="restaurant-image" src="{{ asset('images/Photo-plat-simple.jpeg') }}" alt="Photo d'un plat bien présenté">
                 <div class="restaurant-content">
                     <h2 class="restaurant-title">Le Restaurant Le Gaillard</h2>
                     <p class="restaurant-text">
@@ -127,7 +127,7 @@
                         Notre carte évolue au fil des saisons pour vous proposer des plats toujours plus créatifs et savoureux.<br>
                     </p>
                 </div>
-                <img class="restaurant-image" src="{{ asset('images/restaurant-2.jpg') }}" alt="Image du restaurant">
+                <img class="restaurant-image" src="{{ asset('images/Photo-dessert.jpeg') }}" alt="Photo d'un dessert bien présenté">
             </div>
         </div>
 

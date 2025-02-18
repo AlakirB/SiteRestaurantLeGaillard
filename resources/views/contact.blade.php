@@ -93,7 +93,7 @@
         <div id="navbar-placeholder"></div>
 
         <!-- Hero Image (image put at the top of the page) -->
-        <img class="hero-image-contact" src="{{ asset('images/slide3.jpg') }}" alt="Image du restaurant">
+        <img class="hero-image-contact" src="{{ asset('images/Photo-assiette-social.jpeg') }}" alt="Photo d'une assiette avec un texte : @LE_GAILLARD74">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">

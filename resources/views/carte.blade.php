@@ -93,7 +93,7 @@
         <div id="navbar-placeholder"></div>
 
         <!-- Hero Image (image put at the top of the page) -->
-        <img class="hero-image-carte" src="{{ asset('images/slide1.jpg') }}" alt="Image du restaurant illustrant la carte">
+        <img class="hero-image-carte" src="{{ asset('images/photo-cocktails.jpeg') }}" alt="Photo de cocktails sur une table du restaurant">
 
         <!-- Elements separator -->
         <svg class="elements-separator elements-separator-top" id="visual" viewBox="0 0 1903 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
