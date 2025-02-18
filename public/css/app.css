@@ -1,64 +1,125 @@
-/* Ensure the page can't go over 100% width and no scrolling sideway */
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
+/* CSS for every pages */
 
-/* Navbars CSS */
-.nav-1 {
-    background-color: #292929;
-    height: 50px;
-}
-.header-left, .header-right {
-    color: #FFFFFFA8;
-}
+    /* Ensure the page can't go over 100% width and no scrolling sideway */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
 
-.nav-2 {
-    background-color: #426B56;
-    height: 132px;
-}
+    /* Navbars CSS */
+    .nav-1 {
+        background-color: #292929;
+        height: 50px;
+    }
+    .header-left, .header-right {
+        color: #FFFFFFA8;
+    }
 
-.nav-2.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it is above other elements */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
-}
+    .nav-2 {
+        background-color: #426B56;
+        height: 132px;
+    }
 
-.nav-logo {
-    color: #AF9756;
-}
-.nav-link {
-    color: #AF9756;
-    font-size: 1.2rem;
-}
-.nav-link:hover, #focus-link {
-    color: white;
-    border-bottom: 0.2rem solid white;
-}
-.logo-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 120px; /* Adjust this value as needed */
-}
+    .nav-2.fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure it is above other elements */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+    }
 
-.separator {
-    padding: 0 10px; /* Adjust the spacing as needed */
-    color: white; /* Adjust the color as needed */
-    line-height: 2.5; /* Adjust the line-height to match the nav-link */
-}
+    .nav-logo {
+        color: #AF9756;
+    }
+    .nav-link {
+        color: #AF9756;
+        font-size: 1.2rem;
+    }
+    .nav-link:hover, #focus-link {
+        color: white;
+        border-bottom: 0.2rem solid white;
+    }
+    .logo-img {
+        max-width: 100%;
+        height: auto;
+        max-height: 120px; /* Adjust this value as needed */
+    }
 
-.elements-separator {
-    display: block;
-    height: 100px;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+    .separator {
+        padding: 0 10px; /* Adjust the spacing as needed */
+        color: white; /* Adjust the color as needed */
+        line-height: 2.5; /* Adjust the line-height to match the nav-link */
+    }
+
+    /* Hide the navbar for small screen if not on a small screen */
+    .navbar-content-small-screen {
+        display: none !important;
+    }
+
+    /* For screens smaller than 1024px */
+    @media (max-width: 1024px) {
+
+        /* Hide the small navbar on top */
+        .nav-1 {
+            display: none !important;
+        }
+        
+        /* Hide the navbar for large screen */
+        .navbar-content-large-screen {
+            display: none !important;
+        }
+
+        /* Display the navbar for small screen */
+        .navbar-content-small-screen {
+            display: flex !important;
+        }
+
+        /* Dropdown CSS */
+        /* Change the button of the dropdown */
+        .dropdown-toggle {
+            background-color: #426B56; /* Dark background */
+            color: #AF9756; /* Light text */
+        }
+
+        .dropdown-toggle:hover {
+            background-color: #495057; /* Slightly lighter dark background */
+            color: #ffffff; /* White text */
+        }
+
+        /* Change the background color of the dropdown menu */
+        .dropdown-menu {
+            background-color: #426B56;
+        }
+
+        /* Change the color of the dropdown items */
+        .dropdown-item {
+            color: #AF9756;
+        }
+
+        /* Change the background color of the active dropdown item */
+        .dropdown-item.active, .dropdown-item:active {
+            background-color: #426B56; /* Slightly lighter darkbackground */
+            color: #ffffff; /* White text */
+        }
+
+        /* Change the background color of the dropdown item on hover */
+        .dropdown-item:hover {
+            background-color: #495057; /* Slightly lighter dark background */
+            color: #ffffff; /* White text */
+        }
+    }
+
+    /* SVG CSS */
+    .elements-separator {
+        display: block;
+        height: 100px;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
 /* Specific to welcome page */
 

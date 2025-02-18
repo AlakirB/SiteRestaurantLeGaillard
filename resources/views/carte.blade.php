@@ -41,7 +41,8 @@
 
         <!-- NavBar -->
         <nav class="nav-2 py-0.2">
-            <div class="container d-flex justify-content-between align-items-center">
+            <!-- For screens larger than 1024px -->
+            <div class="navbar-content-large-screen container d-flex justify-content-between align-items-center">
 
                 <!-- Left side of the nav -->
                 <ul class="nav">
@@ -61,6 +62,31 @@
                     <li class="nav-item separator">|</li>
                     <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                 </ul>
+
+            </div>
+
+            <!-- For screens smaller than 1024px -->
+            <div class="navbar-content-small-screen container d-flex justify-content-between align-items-center">
+
+                <!-- Logo on the left -->
+                <a href="#" class="nav-logo d-flex align-items-center text-decoration-none">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo du restaurant" class="me-3 logo-img">
+                </a>
+
+                <!-- Dropdown with links -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{ route('welcome') }}">Accueil</a></li>
+                      <li><a class="dropdown-item active" href="{{ route('carte') }}">La Carte</a></li> <!-- Add the class="active" to the link you want to focus on -->
+                      <li><a class="dropdown-item" href="{{ route('restaurant') }}">Le Restaurant</a></li>
+                      <li><a class="dropdown-item" href="{{ route('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
 
             </div>
         </nav>
