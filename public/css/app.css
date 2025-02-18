@@ -186,48 +186,13 @@
     .block-carte {
         width: 100%;
         height: auto;
+        display: flex;
+        flex-direction: column;
         background-color: #333;
     }
 
-    .carte-title-main {
-        color: #AF9756; 
-        text-align: center; 
-        padding-top: 20px; 
-        font-family: 'Rochester', Sans-serif; 
-        font-size: 40px; 
-        font-weight: 600;
-    }
-
-    .carte-title-secondary {
-        color: #426B56; 
-        text-align: center; 
-        padding-top: 20px; 
-        font-family: 'Rochester', Sans-serif; 
-        font-size: 30px; 
-        font-weight: 600;
-    }
-
-    .carte-appetizer-list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        list-style-type: none;
-        margin-bottom: 0;
-    }
-
-    .carte-text {
-        text-align: center; 
-        width: 40vw;
-        font-size: 1rem; 
-        font-weight: 400; 
-        line-height: 1.5; 
-        color: #BEBEBE;
-        margin-top: 50px;
-    }
-
-    .carte-text-main {
-        font-weight: bold;
-        color:#AF9756;
+    .carte-page {
+        margin: 5px;
     }
 
 /* specific to restaurant page */

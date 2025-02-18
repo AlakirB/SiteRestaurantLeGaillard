@@ -106,42 +106,14 @@
 
         <!-- La Carte  -->
         <div class="block-carte">
-            <div class="carte-content">
-                <h2 class="carte-title-main">La Carte du Restaurant</h2>
-                <div class="carte-appetizer">
-                    <h3 class="carte-title-secondary">Entrées</h3>
-                    <ul class="carte-appetizer-list">
-                        <li class="carte-text">
-                            <span class="carte-text-main">César aux gambas et poulet, burratina et vieux parmesan ----- 180dh</span> <br> 
-                            <i>Caesar with prawns and chicken, burratina and old parmesan</i>
-                        </li>
-                        <li class="carte-text">
-                            <span class="carte-text-main">Salade de bœuf thaïlandaise (fruit à coques) ---------------- 180dh</span> <br>
-                            <i>Thai Beef Salad</i>
-                        </li>
-                        <li class="carte-text">
-                            <span class="carte-text-main">Salade nordique et œuf de caille, vinaigrette à la savora --- 260dh</span> <br>
-                            <i>Nordic salad and quail egg, vinaigrette a la savoura</i>
-                        </li>
-                        <li class="carte-text">
-                            <span class="carte-text-main">Guacamole d’avocat, gambas tempura et nachos fait-maison ---- 180dh</span> <br>
-                            <i>Avocado guacamole, tempura prawns and homemade nachos</i>
-                        </li>
-                        <li class="carte-text">
-                            <span class="carte-text-main">Tartare de tomates cœur de bœuf et sa buratta artisanale ---- 210dh</span> <br>
-                            <i>Beef heart tomato tartare and artisanal buratta</i>
-                        </li>
-                        <li class="carte-text">
-                            <span class="carte-text-main">Asperge rôtie, œuf de poule poché et sabayon au safran pur -- 180dh</span> <br>
-                            <i>Roasted asparagus, poached hen's egg and pure saffron sabayon</i>
-                        </li>
-                        <li class="carte-text">
-                            <span class="carte-text-main">Carpaccio de bœuf, huile d’olive et feuilles de roquette ---- 180dh</span> <br>
-                            <i>Beef carpaccio, olive oil and rocket leaves</i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <img class="carte-page" src="{{ asset('images/menu-page-0.jpg') }}" alt="Page de présentation de la carte">
+            <img class="carte-page" src="{{ asset('images/menu-page-1.jpg') }}" alt="Page de présentation de la carte">
+            <img class="carte-page" src="{{ asset('images/menu-page-2.jpg') }}" alt="Page de présentation de la carte">
+            <img class="carte-page" src="{{ asset('images/menu-page-3.jpg') }}" alt="Page de présentation de la carte">
+            <img class="carte-page" src="{{ asset('images/menu-page-4.jpg') }}" alt="Page de présentation de la carte">
+            <img class="carte-page" src="{{ asset('images/menu-page-5.jpg') }}" alt="Page de présentation de la carte">
+            <img class="carte-page" src="{{ asset('images/menu-page-6.jpg') }}" alt="Page de présentation de la carte">
+            <img class="carte-page" src="{{ asset('images/menu-page-7.jpg') }}" alt="Page de présentation de la carte">
         </div>
 
         <!-- Elements separator -->
